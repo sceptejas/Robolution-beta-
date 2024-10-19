@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Robolution Software Track</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-gray-800 bg-opacity-90">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+      <a href="/index.html" class="text-2xl font-bold text-teal-500">Robolution</a>
+      <ul class="hidden md:flex space-x-8 text-lg">
+        <li><a href="/index.html" class="hover:text-teal-500">Home</a></li>
+        <li><a href="/aboutus.html" class="hover:text-teal-500">About Us</a></li>
+        <li><a href="/Programs.html" class="hover:text-teal-500">Programs</a></li>
+        <li><a href="/events.html" class="hover:text-teal-500">Events</a></li>
+        <li><a href="/joinus.html" class="hover:text-teal-500">Join Us</a></li>
+        <li><a href="/contact.html" class="hover:text-teal-500">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-teal-500">Menu</button>
+    </nav>
+  </header>
+
+  <!-- Section 1: Cohorts -->
+  <section class="py-16 px-6 bg-gray-900">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold text-teal-500 mb-8">Cohorts</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Cohort Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">Web Development Cohort</h2>
+          <p class="text-gray-300 mb-4">Starting on 7th November, learn Full Stack Web Development from scratch and build real-world projects.</p>
+          <button class="bg-teal-500 hover:bg-teal-400 text-white font-semibold py-2 px-4 rounded">Join Now</button>
+        </div>
+        <!-- Cohort Card 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">Data Science & ML Cohort</h2>
+          <p class="text-gray-300 mb-4">Master data science and machine learning with hands-on projects starting on 7th November.</p>
+          <button class="bg-teal-500 hover:bg-teal-400 text-white font-semibold py-2 px-4 rounded">Join Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Talks -->
+  <section class="py-16 bg-gray-800 px-6">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-teal-500 text-center mb-8">Talks</h1>
+
+      <!-- Toggle Button for Talks -->
+      <div class="flex justify-center mb-8">
+        <button id="upcoming-talks-btn" class="bg-teal-500 hover:bg-teal-400 text-white py-2 px-4 rounded-l-md">Upcoming Talks</button>
+        <button id="past-talks-btn" class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-r-md">Past Talks</button>
+      </div>
+
+      <!-- Upcoming Talks Section -->
+      <div id="upcoming-talks" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Talk Card 1 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">Building Scalable Web Apps</h2>
+          <p class="text-gray-300 mb-4">An in-depth session on scaling web applications with microservices and serverless architecture.</p>
+          <p class="text-gray-400">Date: 12th November, 2024</p>
+        </div>
+        <!-- Talk Card 2 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">AI in Healthcare</h2>
+          <p class="text-gray-300 mb-4">Explore how AI is transforming the healthcare industry with real-world case studies.</p>
+          <p class="text-gray-400">Date: 15th November, 2024</p>
+        </div>
+        <!-- Talk Card 3 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">Introduction to Blockchain</h2>
+          <p class="text-gray-300 mb-4">Learn the basics of blockchain technology and decentralized applications.</p>
+          <p class="text-gray-400">Date: 18th November, 2024</p>
+        </div>
+        <!-- Talk Card 4 -->
+        <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">Building with React</h2>
+          <p class="text-gray-300 mb-4">A deep dive into React fundamentals and advanced component architecture.</p>
+          <p class="text-gray-400">Date: 22nd November, 2024</p>
+        </div>
+      </div>
+
+      <!-- Past Talks Section (Hidden by default) -->
+      <div id="past-talks" class="hidden grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Past Talk Card 1 -->
+        <a href="https://www.youtube.com/watch?v=example1" target="_blank">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Introduction to Python</h2>
+            <p class="text-gray-300">A beginner-friendly session on Python programming fundamentals.</p>
+          </div>
+        </a>
+        <!-- Past Talk Card 2 -->
+        <a href="https://www.youtube.com/watch?v=example2" target="_blank">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Data Science with R</h2>
+            <p class="text-gray-300">Learn data science techniques with the R programming language.</p>
+          </div>
+        </a>
+        <!-- Past Talk Card 3 -->
+        <a href="https://www.youtube.com/watch?v=example3" target="_blank">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Understanding Git and GitHub</h2>
+            <p class="text-gray-300">A detailed talk on version control and collaborative development using GitHub.</p>
+          </div>
+        </a>
+        <!-- Past Talk Card 4 -->
+        <a href="https://www.youtube.com/watch?v=example4" target="_blank">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Advanced JavaScript</h2>
+            <p class="text-gray-300">A talk covering advanced JavaScript concepts for frontend developers.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Hackathons -->
+  <section class="py-16 px-6 bg-gray-900">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-teal-500 text-center mb-8">Hackathons</h1>
+
+      <!-- Toggle Button for Hackathons -->
+      <div class="flex justify-center mb-8">
+        <button id="upcoming-hackathons-btn" class="bg-teal-500 hover:bg-teal-400 text-white py-2 px-4 rounded-l-md">Upcoming Hackathons</button>
+        <button id="past-hackathons-btn" class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-r-md">Past Hackathons</button>
+      </div>
+
+      <!-- Upcoming Hackathons Section -->
+      <div id="upcoming-hackathons" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Hackathon Card 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">Robolution Hackathon 2024</h2>
+          <p class="text-gray-300 mb-4">Join us for a weekend of coding and innovation!</p>
+          <p class="text-gray-400">Date: 30th November - 1st December, 2024</p>
+          <button class="bg-teal-500 hover:bg-teal-400 text-white font-semibold py-2 px-4 rounded">Register Now</button>
+        </div>
+        <!-- Hackathon Card 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold text-teal-400 mb-2">Hack the Future</h2>
+          <p class="text-gray-300 mb-4">A 48-hour hackathon focusing on AI and machine learning.</p>
+          <p class="text-gray-400">Date: 15th December, 2024</p>
+          <button class="bg-teal-500 hover:bg-teal-400 text-white font-semibold py-2 px-4 rounded">Register Now</button>
+        </div>
+      </div>
+
+      <!-- Past Hackathons Section (Hidden by default) -->
+      <div id="past-hackathons" class="hidden grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Past Hackathon Card 1 -->
+        <a href="https://www.youtube.com/watch?v=example_hackathon1" target="_blank">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">Hackathon 2023</h2>
+            <p class="text-gray-300">A great event where teams built innovative solutions in just 48 hours!</p>
+            <p class="text-gray-400">Date: 5th - 6th November, 2023</p>
+          </div>
+        </a>
+        <!-- Past Hackathon Card 2 -->
+        <a href="https://www.youtube.com/watch?v=example_hackathon2" target="_blank">
+          <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:bg-gray-700">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-2">AI Hackathon 2022</h2>
+            <p class="text-gray-300">Innovative AI solutions were created during this exciting hackathon!</p>
+            <p class="text-gray-400">Date: 12th - 13th December, 2022</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const upcomingTalksBtn = document.getElementById('upcoming-talks-btn');
+    const pastTalksBtn = document.getElementById('past-talks-btn');
+    const upcomingTalks = document.getElementById('upcoming-talks');
+    const pastTalks = document.getElementById('past-talks');
+
+    const upcomingHackathonsBtn = document.getElementById('upcoming-hackathons-btn');
+    const pastHackathonsBtn = document.getElementById('past-hackathons-btn');
+    const upcomingHackathons = document.getElementById('upcoming-hackathons');
+    const pastHackathons = document.getElementById('past-hackathons');
+
+    upcomingTalksBtn.addEventListener('click', () => {
+      upcomingTalks.classList.remove('hidden');
+      pastTalks.classList.add('hidden');
+      upcomingTalksBtn.classList.add('bg-teal-500');
+      upcomingTalksBtn.classList.remove('bg-gray-700');
+      pastTalksBtn.classList.add('bg-gray-700');
+      pastTalksBtn.classList.remove('bg-teal-500');
+    });
+
+    pastTalksBtn.addEventListener('click', () => {
+      pastTalks.classList.remove('hidden');
+      upcomingTalks.classList.add('hidden');
+      pastTalksBtn.classList.add('bg-teal-500');
+      pastTalksBtn.classList.remove('bg-gray-700');
+      upcomingTalksBtn.classList.add('bg-gray-700');
+      upcomingTalksBtn.classList.remove('bg-teal-500');
+    });
+
+    upcomingHackathonsBtn.addEventListener('click', () => {
+      upcomingHackathons.classList.remove('hidden');
+      pastHackathons.classList.add('hidden');
+      upcomingHackathonsBtn.classList.add('bg-teal-500');
+      upcomingHackathonsBtn.classList.remove('bg-gray-700');
+      pastHackathonsBtn.classList.add('bg-gray-700');
+      pastHackathonsBtn.classList.remove('bg-teal-500');
+    });
+
+    pastHackathonsBtn.addEventListener('click', () => {
+      pastHackathons.classList.remove('hidden');
+      upcomingHackathons.classList.add('hidden');
+      pastHackathonsBtn.classList.add('bg-teal-500');
+      pastHackathonsBtn.classList.remove('bg-gray-700');
+      upcomingHackathonsBtn.classList.add('bg-gray-700');
+      upcomingHackathonsBtn.classList.remove('bg-teal-500');
+    });
+  </script>
+</body>
+</html>

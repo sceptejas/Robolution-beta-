@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact Us - Robolution</title>
+    <style>
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+        <a href="/index.html" class="text-2xl font-bold text-teal-500">Robolution</a>
+        <ul class="hidden md:flex space-x-8 text-lg">
+          <li><a href="/index.html" class="hover:text-teal-500">Home</a></li>
+          <li><a href="/aboutus.html" class="hover:text-teal-500">About Us</a></li>
+          <li><a href="/Programs.html" class="hover:text-teal-500">Programs</a></li>
+          <li><a href="/events.html" class="hover:text-teal-500">Events</a></li>
+          <li><a href="/joinus.html" class="hover:text-teal-500">Join Us</a></li>
+          <li><a href="/contact.html" class="hover:text-teal-500">Contact</a></li>
+        </ul>
+        <button class="md:hidden text-teal-500">Menu</button>
+      </nav>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <header class="p-6">
+        <h1 class="text-4xl font-bold text-teal-400">Contact Us</h1>
+    </header>
+
+    <div class="flex flex-col md:flex-row md:justify-between p-6">
+        <div class="md:w-1/2">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-4">Get in Touch</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+                <h3 class="text-xl font-semibold">Teacher Coordinator</h3>
+                <div class="flex items-center mt-4">
+                    <img src="/Lakshmi  Maam.jpeg" alt="Teacher Coordinator" class="rounded-full mr-4">
+                    <div>
+                        <p class="text-gray-300">Mrs. Lakshmi</p>
+                        <p class="text-gray-400">Teacher Coordinator</p>
+                        <p class="text-gray-400">example@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Robolution Software Track Lead</h3>
+                <div class="flex items-center mt-4">
+                    <img src="/Tejas2.jpg" alt="Software Track Lead" class="rounded-full mr-4" style="height: 100px; width: 100px ;">
+                    <div>
+                        <p class="text-gray-300">Tejasvi</p>
+                        <p class="text-gray-400">Software Track Lead</p>
+                        <p class="text-gray-400">1bi23ee060@bit-bangalore.edu.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 md:pl-8">
+            <h2 class="text-2xl font-semibold text-teal-400 mb-4">Location</h2>
+            <div class="h-96 rounded-lg shadow-lg">
+                <iframe
+                    id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.265443276022!2d77.57164927507615!3d12.954858987359005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1592715c4e7f%3A0x7dfaf94e52204678!2sBangalore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1729370179818!5m2!1sen!2sin"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto text-center">
+          <h3 class="text-xl font-semibold">Follow Us</h3>
+          <div class="flex justify-center space-x-6 mt-4">
+            <a href="#" class="text-teal-500 hover:text-white"><img src="https://img.icons8.com/ios-filled/50/00cec9/github.png" alt="GitHub"/></a>
+            <a href="#" class="text-teal-500 hover:text-white"><img src="https://img.icons8.com/ios-filled/50/00cec9/twitter.png" alt="Twitter"/></a>
+            <a href="#" class="text-teal-500 hover:text-white"><img src="https://img.icons8.com/ios-filled/50/00cec9/linkedin.png" alt="LinkedIn"/></a>
+          </div>
+          <p class="mt-6">&copy; 2024 Robolution. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
